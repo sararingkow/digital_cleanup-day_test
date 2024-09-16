@@ -1,15 +1,45 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Sådan laver du en digital oprydning">
+  <div class="top_part text-center font-sans bg-light-green p-14">
+    <h1 class="text-dark-green">Sådan laver du en digital oprydning</h1>
+    <h2 class="text-off-white text-4xl">Step by step</h2>
+  </div>
+  <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 mt-8">
+    <div class="col_1 mx-16 mb-10">
+      <h2 class="text-2xl">STEP 1</h2>
+      <h3 class="text-xl">Ryd op i din telefon</h3>
+      <p class="text-lg">
+        Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
+        gamle apps ...
+      </p>
+    </div>
+    <div class="col_2 mx-16 mb-10">
+      <h2 class="text-2xl">STEP 2</h2>
+      <h3 class="text-xl">Ryd op i din mail-indbakke</h3>
+      <p class="text-lg">
+        Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
+        slet alt det andet! ...
+      </p>
+    </div>
+    <div class="col_3 mx-16 mb-10">
+      <h2 class="text-2xl">STEP 3</h2>
+      <h3 class="text-xl">Ryd op i din computers harddrive</h3>
+      <p class="text-lg">
+        Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
+        og slørede billeder ...
+      </p>
+    </div>
+    <div class="col_4 mx-16">
+      <h2 class="text-2xl">STEP 4</h2>
+      <h3 class="text-xl">Ændr dine vaner</h3>
+      <p class="text-lg">
+        I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
+        ...
+      </p>
+    </div>
+  </div>
 </MainLayout>
