@@ -4,6 +4,8 @@ import "../styles/tailwind.css";
 import "animate.css";
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
+import pixel2 from "../assets/images/pixel_2.svg";
+import { Image } from "astro:assets";
 ---
 
 <html lang="en">
@@ -22,7 +24,6 @@ import Footer from "../components/Footer.astro";
     <main>
       <slot />
     </main>
-
     <footer><Footer /></footer>
   </body>
 </html>
