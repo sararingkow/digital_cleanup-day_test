@@ -7,36 +7,40 @@ import mail from "../assets/images/envelope.svg";
 import computer from "../assets/images/harddrive.svg";
 import papers from "../assets/images/paper_stack.svg";
 import pixel1 from "../assets/images/pixel_1.svg";
-import pixel2 from "../assets/images/pixel_2.svg";
+import circle from "../assets/images/circle.svg";
 import Button_shareresults from "../components/Button_shareresults.astro";
 ---
 
 <MainLayout title="Sådan laver du en digital oprydning">
-  <div class="top_part text-center font-sans bg-light-green p-24 relative">
-    <h1 class="text-dark-green text-5xl">Sådan laver du en digital oprydning</h1>
-    <h2 class="text-off-white text-3xl">Step by step</h2>
+  <div class="top_part text-center font-sans bg-light-green relative pt-10 md:pt-4">
+    <h1 class="text-dark-green text-5xl md:text-h1 md:text-center relative">
+      Sådan laver du en <span class="digital-word relative">digital</span> oprydning
+    </h1>
+    <br />
+    <h2 class="text-off-white text-2xl md:text-4xl p-8 md:p-8">Step by step</h2>
     <!-- Pixel image container -->
-    <div class="pixel1-container absolute -translate-x-6">
-      <Image src={pixel1} alt="" width={120} height={120} />
+    <div class="pixel1-container hidden md:flex flex-row translate-y-15 justify-start">
+      <Image class="h-auto w-auto" src={pixel1} alt="" />
     </div>
   </div>
 
+  <div class="pixel2-container hidden md:flex flex-row translate-y-15 justify-end w-45"></div>
   <div class="text_container text-dark-green grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto mt-16 max-w-7xl">
     <div class="col_1 mx-16 mb-10">
-      <h2 class="text-xl">STEP 1</h2>
-      <h3 class="text-lg pb-2">Ryd op i din telefon</h3>
+      <h2 class="text-h2_m">STEP 1</h2>
+      <h3 class="text-h3_m pb-2">Ryd op i din telefon</h3>
       <Image src={phone} alt="" width={80} height={80} />
-      <p class="text-md pt-4 pb-4">
+      <p class="text-brodtekst_mini pt-4 pb-4">
         Fjern alle de apps, du ikke har brugt i et stykke tid, eller kun har brugt få gange. Vær ærlig og modig! Slet alle de unødvendige, glemte,
         gamle apps ...
       </p>
       <Button_readmore>Læs mere</Button_readmore>
     </div>
     <div class="col_2 mx-16 mb-10">
-      <h2 class="text-xl">STEP 2</h2>
-      <h3 class="text-lg pb-4">Ryd op i din mail-indbakke</h3>
+      <h2 class="text-h2_m">STEP 2</h2>
+      <h3 class="text-h3_m pb-4">Ryd op i din mail-indbakke</h3>
       <Image src={mail} alt="" width={80} height={80} />
-      <p class="text-md pt-4 pb-4">
+      <p class="text-brodtekst_mini pt-4 pb-4">
         Filtrér dine e-mails efter de ældste og arkivér dem. Afmeld nyhedsbreve, som du ikke engang læser. Vælg lange samtaler, behold den nyeste, og
         slet alt det andet! ...
       </p>
@@ -44,10 +48,10 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       <Button_readmore>Læs mere</Button_readmore>
     </div>
     <div class="col_3 mx-16 mb-10">
-      <h2 class="text-xl">STEP 3</h2>
-      <h3 class="text-lg pb-4">Ryd op i din computers harddrive</h3>
+      <h2 class="text-h2_m">STEP 3</h2>
+      <h3 class="text-h3_m pb-4">Ryd op i din computers harddrive</h3>
       <Image src={computer} alt="" width={80} height={80} />
-      <p class="text-md pt-4 pb-4">
+      <p class="text-brodtekst_mini pt-4 pb-4">
         Ryd op på din personlige computer og slet filer, der er dubletter eller er blevet overflødige. Gennemgå alle dine billeder og slet dubletter
         og slørede billeder ...
       </p>
@@ -55,10 +59,10 @@ import Button_shareresults from "../components/Button_shareresults.astro";
       <Button_readmore>Læs mere</Button_readmore>
     </div>
     <div class="col_4 mx-16 mb-10">
-      <h2 class="text-xl">STEP 4</h2>
-      <h3 class="text-lg pb-2">Ændr dine vaner</h3>
+      <h2 class="text-h2_m">STEP 4</h2>
+      <h3 class="text-h3_m pb-2">Ændr dine vaner</h3>
       <Image src={papers} alt="" width={80} height={80} />
-      <p class="text-md pt-4 pb-4">
+      <p class="text-brodtekst_mini pt-4 pb-4">
         I stedet for at sende e-mails, brug flere co-working-steder. Stop med at sende ‘ok’ og ‘tak’ e-mails! Opbevar de vigtige filer ét sted i skyen
         ...
       </p>

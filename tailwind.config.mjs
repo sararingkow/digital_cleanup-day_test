@@ -7,8 +7,8 @@ export default {
         "light-green": "#798E7F",
         "dark-green": "#23483B",
         "off-white": "#F7F7F5",
-        "light-yellow": "#FFBB00",
-        "medium-yellow": "#FFCB3F",
+        "light-yellow": "#FFCB3F",
+        "medium-yellow": "#FFBB00",
         "dark-yellow": "#C89300",
       },
 
